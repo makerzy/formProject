@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>Form Project</title>
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1 id="title"> <span class="desktop">FreeCodeCamp</span> <span class="mobile">FCC</span><i class="fab fa-free-code-camp"></i> Survey Form</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="description">
+      <p id="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, impedit eaque? Fugiat necessitatibus nulla voluptatem, sed laboriosam voluptates suscipit quasi?
+      </p>
+    </div>
+
+    <form id="survey-form" class="survey-form">
+
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="name">Email</label>
+        <input
+          type="email"
+          name="name"
+          id="email"
+          class="form-control"
+          placeholder="example@email.com"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="name">Number</label>
+        <input
+          type="number"
+          id="number"
+          class="form-control"
+          min="10"
+          max="49"
+          placeholder="Enter some numbers"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label id="date-label" for="name">Age(Optional)</label>
+        <input
+          type="date"
+          name="name"
+          id="age"
+          class="form-control"
+          placeholder="Enter your age"
+        />
+      </div>
+
+      <div class="form-group">
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" class="drop-down">
+          <option value="studeny">Student</option>
+          <option value="full-time-learner">Full time learner</option>
+          <option value="full-time-employee">Full time Job</option>
+          <option value="prefer-not-to-say">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="radio-btn form-group">
+          <p>Please select your gender:</p>
+          <input type="radio" name="gender" value="male"> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other<br>
+      </div>
+
+      <div class="form-group">
+        <p>
+          What would you like to learn?
+          <span class="hint">(Check all that apply)</span>
+        </p>
+
+        <label>
+          <input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />HTML
+        </label><br>
+
+        <label>
+          <input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />Python
+        </label><br>
+
+        <label>
+          <input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />CSS & SASS
+        </label><br>
+
+        <label>
+          <input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />Java-Script
+        </label><br>
+
+        <label>
+          <input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />C++ & C
+        </label><br>
+
+        <label>
+          <input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />JAVA
+        </label><br>
+
+        <label>
+          <input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />C#(ASP.NET)
+        </label><br>
+
+      </div>
+
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea 
+          name="comment" 
+          maxlength="1000"
+          
+          id="comment" 
+          class="text-input"
+          placeholder="Enter your comments here">
+        </textarea>
+      </div>
+
+      <div class="form-group submit">
+        <button type="submit" id="submit" class="btn" value="Submit">Submit</button>
+      </div>
+
+    </form>
+  </div>
+
+  <footer>
+    <div class="about-container">
+      <div class="about">
+          <h3 id="#about">About Us</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ullam dolorum ducimus harum possimus officia odit aliquam obcaecati fuga quibusdam!</p>      
+      </div>
+
+      <div class="links-category">
+        <div class="categories">
+          <h3>Categories</h3>
+          <ul>
+            <div>
+              <li><a href="#">C & C++</a></li>
+            </div>
+            <div>
+              <li><a href="#">Python</a></li>
+            </div>
+            <div>
+              <li><a href="#">Java-Script</a></li>
+            </div>
+            <div>
+              <li><a href="#">CSS & HTML</a></li>
+            </div>
+            <div>
+              <li><a href="#">C#</a></li>
+            </div>
+          </ul>
+        </div>
+        <div class="links">
+          <h3>Links</h3>
+          <ul>
+            <div>
+              <li><a href="#about">About Us</a></li>
+            </div>
+            <div>
+              <li><a href="#">Contact Us</a></li>
+            </div>
+            <div>
+              <li><a href="#">Terms and Conditions</a></li>
+            </div>
+            <div>
+              <li><a href="#">Privacy Policy</a></li>
+            </div>
+            <div>
+              <li><a href="#">Affiliates</a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    <hr>
+    <div class="copy-social">
+      <div class="social">
+        
+        <ul>
+         
+            <li>
+              <a href="#"> <i class="fab fa-facebook fa-2x" style="color: #3b5998"></i></a>
+            </li>
+          
+            <li>
+              <a href="#"> <i class="fab fa-twitter fa-2x" style="color: #00acee"></i></a>
+            </li>
+
+            <li>
+              <a href="#"> <i class="fab fa-linkedin fa-2x" style="color: #2867b2"></i></a>
+            </li>
+                     
+            <li>
+              <a href="#"> <i class="fas fa-globe fa-2x" style="color: #139248"></i></a>
+            </li>
+        </ul>
+
+      </div>
+      <div class="copy">
+        <p>Copyright &copy; 2019 All Rights Reserved by Sam<i class="fas fa-laptop-code"></i></p>
+      </div>
+    </div>
+
+    
+  </footer>
+</body>
+</html>

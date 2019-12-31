@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #d6d7db;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #000;
+  font-size: 1.1em;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+
+header {
+  background: #255e23;
+  color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 2px;
+  font-size: 1.4em;
+  text-align: center;
+  z-index: 4;
+  letter-spacing: 2px;
+}
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px){
+  header{
+    font-size: 1.1em;
+    letter-spacing: normal;
+  }
+  header .desktop{
+    display: none;
+  }
+  header .mobile {
+    display: contents;
+  }
+}
+
+
+label {
+  display: block;
+  padding: 0 10px;
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+
+.container {
+  
+  background-image: url(./img/img-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: absolute;
+  justify-items: center;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    background-position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .survey-form {
+    padding: 0;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    align-items: center;
+    border-radius: ;
+  }
+}
+
+.container .description p {
+  padding-left: 50px;
+  padding-top: 15px;
+}
+.container .survey-form{
+  padding:50px 150px 20px 140px;
+  margin: auto;
+  width: 60%%;
+  align-items: center;
+  background: #5a6e67;
+  opacity: .8;
+  color: #fff;
+  z-index: 3;
+}
+
+
+.survey-form .form-group {
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+.survey-form input, .survey-form textarea, .survey-form .drop-down {
+  width: 80%;
+  padding: 8px;
+  margin: 5px;
+}
+
+.survey-form .input-checkbox {
+  text-align: center;
+  width: inherit;
+}
+
+.survey-form .radio-btn input[type="radio"]{
+  padding-bottom: 8px;
+  display: inline-block;
+  width: inherit;
+  margin-right: 10px;
+
+}
+
+.survey-form input::placeholder, .survey-form input[type="date"] {
+  color: black;
+  font-size: 1.0em;
+}
+
+.survey-form p{
+  padding-left: 8px;
+  font-size: 1.125em;
+  margin: 0;
+}
+
+.survey-form .submit{
+  padding: 8px;
+  margin: 0;
+}
+.form-group .btn {
+  font-size: 1.1em;
+  padding: 6px 10px 25px 10px;
+  
+  background: #333;
+  color: #fff;
+  height: 2em;
+
+}
+
+
+
+h3{
+  font-size: 1.4em;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.about p {
+  font-size: 1.1em;
+  padding:0 10px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.about {
+  background-color: #666;
+  background-image: url(./img/img-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .7;
+  z-index: -1;
+  display: block;
+}
+
+footer .links-category {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+footer .links-category h3{
+  text-align: center;
+}
+
+footer .links-category ul{
+  padding: 0;
+}
+
+footer .links-category ul li{
+  padding-bottom:10px;
+  list-style: none;
+  text-align: center;
+}
+
+footer .links-category ul li a{
+  color: #333;
+}
+
+footer .copy-social {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+footer .copy-social .social ul {
+  padding: 0;
+}
+
+footer .copy-social .social ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+
